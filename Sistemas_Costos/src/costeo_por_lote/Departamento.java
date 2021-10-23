@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author ASUS
  */
 public class Departamento {
-    double cifp,cifr,tasa,cifa;
+    private double cifp,cifr,tasa,cifa;
     String nombre;
     ArrayList<Base> basesPresupuestado = new ArrayList<Base>();
     ArrayList<Base> basesReal= new ArrayList<Base>();
@@ -52,9 +52,10 @@ public class Departamento {
     }
     
     
-    public void calculandoCifa(String tipoBase)
+    public double calculandoCifa(String tipoBase)
     {
         this.cifa = tasa*(obteniendoBase(tipoBase,true).getHoras());
+        return cifa;
     }
     
     
@@ -83,6 +84,12 @@ public class Departamento {
         return null;
         
     }
+
+    public double getCifp() {
+        return cifp;
+    }
+    
+    
     
     
 }
