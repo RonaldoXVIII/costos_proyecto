@@ -17,6 +17,9 @@ public class Costo {
         this.costoConversion = costoConversion;
     }
     
-    
+    public  double costoTotal()
+    {
+        return costoMaterial+costoConversion;
+    }
     
 }
