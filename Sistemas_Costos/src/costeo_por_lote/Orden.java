@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package costeo_por_lote;
-
+/*RONALDO SE FALLO UN PENALL*/
 import java.util.ArrayList;
 
 /**
@@ -28,10 +28,10 @@ public class Orden {
         this.cifa = cifa;
         this.unidades = unidades;
     }
+    //Ronaldo estuvo aqui
     
     
-    
-    
+    //Ronald otra vez aqui
     
     
     
@@ -71,7 +71,7 @@ public class Orden {
 
     
     
-    
+    //Fabri papasito rico Oh me vengo
     
     
     
