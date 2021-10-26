@@ -44,15 +44,7 @@ public class Departamento {
         return this.costoContabilizado-this.costoContabilizar;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
     
     public void costoPorContabilizado(boolean esPeps) {
@@ -75,22 +67,7 @@ public class Departamento {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
@@ -140,19 +117,7 @@ public class Departamento {
        return costoE_porUnidadCC(esPeps) +costoE_porUnidadMaterial(esPeps);
    }
    
- 
-   
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
