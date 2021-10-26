@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Costeo_ABC;
+package costeo_por_abc;
 
 import java.util.ArrayList;
 import java.util.function.BiPredicate;
