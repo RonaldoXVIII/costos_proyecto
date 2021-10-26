@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package costeo_por_abc;
+package Costeo_ABC;
 
 /**
  *
