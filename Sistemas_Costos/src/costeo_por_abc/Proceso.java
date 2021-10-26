@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package costeo_por_abc;
+package Costeo_ABC;
 
 import java.util.ArrayList;
 import java.util.function.BiPredicate;
@@ -67,7 +67,7 @@ public class Proceso {
                 
             }
         }
-        cifaActividad.set(3, 500.0);
+        
     }
     
     public double calculoCostoTotal(){
@@ -84,11 +84,48 @@ public class Proceso {
         return cifaActividad;
     }
 
+    public double getCostoMaterialD() {
+        return costoMaterialD;
+    }
+
+    public double getCostoManoObraD() {
+        return costoManoObraD;
+    }
+
+    public String getNombreProducto() {
+        return nombreProducto;
+    }
+
+    public int getNumeroUnidades() {
+        return numeroUnidades;
+    }
+
+    public ArrayList<Actividad> getActividadesUsadas() {
+        return actividadesUsadas;
+    }
+
+    public ArrayList<Impulsador> getImpulsadorUsados() {
+        return impulsadorUsados;
+    }
+
+    public double getCostoTotal() {
+        return costoTotal;
+    }
+
+    public double getCostoUnitario() {
+        return costoUnitario;
+    }
+
+    public double getCifaTotal() {
+        return cifaTotal;
+    }
+
+    
+    
     @Override
     public String toString() {
         return "Proceso{" + "actividadesUsadas=" + actividadesUsadas + ", impulsadorUsados=" + impulsadorUsados + ", costoMaterialD=" + costoMaterialD + ", costoManoObraD=" + costoManoObraD + ", nombreProducto=" + nombreProducto + ", numeroUnidades=" + numeroUnidades + ", costoTotal=" + costoTotal + ", costoUnitario=" + costoUnitario + ", cifaTotal=" + cifaTotal + ", cifaActividad=" + cifaActividad + '}';
     }
-    
-    
+      
     
 }
