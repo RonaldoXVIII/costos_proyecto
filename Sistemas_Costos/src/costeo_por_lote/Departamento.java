@@ -14,6 +14,12 @@ import java.util.ArrayList;
 public class Departamento {
     private double cifp,cifr,tasa,cifa;
     String nombre;
+    
+    
+    
+    
+    
+    
     ArrayList<Base> basesPresupuestado = new ArrayList<Base>();
     ArrayList<Base> basesReal= new ArrayList<Base>();
     

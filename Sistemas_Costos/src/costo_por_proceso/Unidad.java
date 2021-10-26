@@ -18,6 +18,8 @@ public class Unidad {
     int cantidad;
     String estado;
 
+    
+    
     public Unidad(double tasa_cc, double tasa_cm, Costo costo, int cantidad, String estado) {
         this.tasa_cc = tasa_cc;
         this.tasa_cm = tasa_cm;

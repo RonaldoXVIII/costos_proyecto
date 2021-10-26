@@ -30,9 +30,6 @@ public class Departamento {
         this.costoFinal = costoFinal;
         this.uep_inicial = uep_inicial;
         this.uep_final = uep_final;
-        
-        
-        
         this.totalCosteado = uep_final.cantidad + unidadesTerminadas.cantidad;
         
     }
@@ -147,6 +144,47 @@ public class Departamento {
         return totalCosteado-(uep_final.cantidad+uep_inicial.cantidad);
     }
     
+
+    
+    public void procesandoInformacion(boolean esPeps)
+    {
+        
+        
+                unidades_comenzadas();
+        unidades_cyt();
+        unidades_equivalentes(esPeps);
+        costoE_Total(esPeps);
+        costoPorContabilizar();
+        costoPorContabilizado(esPeps);
+        
+        
+       String prueba="PP"
+               + "TOTAL COSTEADO: "+totalCosteado
+               + "TOTAL COMENZADAS"+unidades_comenzadas()
+               +"COSTOS CONVERSION"+ueCConversion
+               +"COSTOS C. MATERIALES"+costosContabilizarMateriales()
+               +"COSTOS C. CCONVERSION"+ costosContabilizarCC()
+               +"COSTOS E/UNIDAD Material "+ costoE_porUnidadMaterial(esPeps)
+               +"COSTOS E/UNIDAD CC"+costoE_porUnidadCC(esPeps);
+      
+       
+       
+       
+       
+        System.out.println(prueba);
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    }
             
             
     
