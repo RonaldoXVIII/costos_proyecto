@@ -1,7 +1,10 @@
 
-package Modelo;
+package Modelo_lote;
 
-import Vista.FrmPrincipal;
+import Vista_Lote.FrmPrincipal;
+import Modelo_lote.Base;
+import Modelo_lote.Departamento;
+import Modelo_lote.Empresa;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

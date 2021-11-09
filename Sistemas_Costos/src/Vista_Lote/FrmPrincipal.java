@@ -1,9 +1,9 @@
 
-package Vista;
+package Vista_Lote;
 
-import Controlador.DepartamentoController;
-import Controlador.EmpresaController;
-import Controlador.OrdenController;
+import Controlador_lote.DepartamentoController;
+import Controlador_lote.EmpresaController;
+import Controlador_lote.OrdenController;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

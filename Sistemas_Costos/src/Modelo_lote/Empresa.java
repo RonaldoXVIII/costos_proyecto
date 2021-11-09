@@ -1,5 +1,5 @@
 
-package Modelo;
+package Modelo_lote;
 
 import java.util.ArrayList;
 import java.util.Collections;

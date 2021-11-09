@@ -1,9 +1,9 @@
 
-package Controlador;
+package Controlador_lote;
 
-import Modelo.Departamento;
-import Modelo.DepartamentoModel;
-import Vista.FrmPrincipal;
+import Modelo_lote.Departamento;
+import Modelo_lote.DepartamentoModel;
+import Vista_Lote.FrmPrincipal;
 import java.util.ArrayList;
 import java.util.List;
 

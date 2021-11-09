@@ -1,8 +1,8 @@
 
-package Controlador;
+package Controlador_lote;
 
-import Modelo.OrdenModel;
-import Vista.FrmPrincipal;
+import Modelo_lote.OrdenModel;
+import Vista_Lote.FrmPrincipal;
 
 public class OrdenController
 {

@@ -1,9 +1,9 @@
 
-package Controlador;
+package Controlador_lote;
 
-import Modelo.Empresa;
-import Modelo.EmpresaModel;
-import Vista.FrmPrincipal;
+import Modelo_lote.Empresa;
+import Modelo_lote.EmpresaModel;
+import Vista_Lote.FrmPrincipal;
 
 public class EmpresaController 
 {

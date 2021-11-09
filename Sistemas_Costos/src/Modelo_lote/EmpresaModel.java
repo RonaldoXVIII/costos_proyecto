@@ -1,7 +1,9 @@
 
-package Modelo;
+package Modelo_lote;
 
-import Vista.FrmPrincipal;
+import Vista_Lote.FrmPrincipal;
+import Modelo_lote.Base;
+import Modelo_lote.Empresa;
 import javax.swing.JOptionPane;
 
 public class EmpresaModel

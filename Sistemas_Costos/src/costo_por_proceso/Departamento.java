@@ -75,10 +75,15 @@ public class Departamento {
         
     }
     
+    
+    
     public double costosContabilizarCC()
     {
         return costoInicial.costoConversion + costoFinal.costoConversion;
     }
+    
+    
+    
     
    public double costoPorContabilizar()
    {

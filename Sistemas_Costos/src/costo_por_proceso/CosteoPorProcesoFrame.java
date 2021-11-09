@@ -53,14 +53,11 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         txtCostoInicialCC = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         txtTerminadasTasaCM = new javax.swing.JTextField();
-        txtUEPFinalCosto = new javax.swing.JTextField();
         txtTerminadasTasaCC = new javax.swing.JTextField();
-        txtTerminadaCosto = new javax.swing.JTextField();
         txtTasaUEPInicialCM = new javax.swing.JTextField();
         txtTasaUEPFinalCM = new javax.swing.JTextField();
         txtTasaUEPInicialCC = new javax.swing.JTextField();
         txtTasaUEPFinalCC = new javax.swing.JTextField();
-        txtUEPInicialCosto = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         cbMetodoSolucion = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
@@ -103,7 +100,7 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
                 txtCostoIniciaMaterialActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCostoIniciaMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 369, 135, -1));
+        jPanel1.add(txtCostoIniciaMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 135, -1));
 
         jLabel4.setText("Unidades Terminadas");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 115, -1, -1));
@@ -123,7 +120,7 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         jPanel1.add(txtUnidadesTerminadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 111, 135, -1));
 
         jLabel6.setText("Costo Final");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 443, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
 
         jLabel7.setText("Costo Inicial");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 349, -1, -1));
@@ -133,7 +130,7 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
                 txtCostoFinalMaterialActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCostoFinalMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 435, 135, -1));
+        jPanel1.add(txtCostoFinalMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 430, 135, -1));
 
         jLabel8.setText("Unidades en proceso Inicial");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 219, -1, -1));
@@ -168,17 +165,17 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
                 txtCostoFinalCCActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCostoFinalCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 464, 135, -1));
+        jPanel1.add(txtCostoFinalCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 135, -1));
 
         txtCostoInicialCC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCostoInicialCCActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCostoInicialCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 399, 135, -1));
+        jPanel1.add(txtCostoInicialCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 135, -1));
 
-        jLabel14.setText("TASA      CM           CC            COSTO");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 77, 219, -1));
+        jLabel14.setText("     CM           CC     ");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 110, -1));
 
         txtTerminadasTasaCM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,26 +184,12 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         });
         jPanel1.add(txtTerminadasTasaCM, new org.netbeans.lib.awtextra.AbsoluteConstraints(276, 111, 48, -1));
 
-        txtUEPFinalCosto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUEPFinalCostoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtUEPFinalCosto, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 70, -1));
-
         txtTerminadasTasaCC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtTerminadasTasaCCActionPerformed(evt);
             }
         });
         jPanel1.add(txtTerminadasTasaCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 111, 48, -1));
-
-        txtTerminadaCosto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTerminadaCostoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtTerminadaCosto, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 111, 64, -1));
 
         txtTasaUEPInicialCM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,13 +219,6 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         });
         jPanel1.add(txtTasaUEPFinalCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 48, -1));
 
-        txtUEPInicialCosto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUEPInicialCostoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtUEPInicialCosto, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 70, -1));
-
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cbMetodoSolucion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PEPS", "PP" }));
@@ -262,13 +238,13 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         jPanel2.add(lbCostoContabilizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(188, 138, 120, 25));
         jPanel2.add(lbCostosEUCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 140, 24));
 
-        jLabel15.setText("TOTAL COSTEADO");
+        jLabel15.setText("TOTAL U. EQUI- MATERIALES");
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, -1, -1));
 
         jLabel16.setText("TOTAL UNID COMENZADAS");
         jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 313, -1, -1));
 
-        jLabel17.setText("COSTOS DE CONVERSION");
+        jLabel17.setText("UNID. DE COSTOS DE CONVERSION");
         jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 347, -1, -1));
 
         jLabel18.setText("COSTOS CONTAB. MATERIALES :");
@@ -284,9 +260,9 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 469, -1, -1));
         jPanel2.add(lbCostoContabilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 140, 30));
         jPanel2.add(lbCostoContabilizado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 140, 30));
-        jPanel2.add(lbTotalCosteado, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 140, 24));
+        jPanel2.add(lbTotalCosteado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 140, 24));
         jPanel2.add(lbTotalUComenzadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 140, 24));
-        jPanel2.add(lbCostosConversion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 140, 24));
+        jPanel2.add(lbCostosConversion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 140, 24));
         jPanel2.add(lbCostContabM, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, 140, 24));
         jPanel2.add(lbCostContabCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 410, 140, 24));
         jPanel2.add(lbCostosEUMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 140, 24));
@@ -322,19 +298,18 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(109, 109, 109)
+                        .addComponent(btnCalcular))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(103, 103, 103)
-                                .addComponent(btnCalcular)
-                                .addGap(0, 0, Short.MAX_VALUE)))))
+                        .addGap(18, 18, 18)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 24, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
@@ -448,17 +423,9 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTerminadasTasaCMActionPerformed
 
-    private void txtUEPFinalCostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUEPFinalCostoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUEPFinalCostoActionPerformed
-
     private void txtTerminadasTasaCCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTerminadasTasaCCActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTerminadasTasaCCActionPerformed
-
-    private void txtTerminadaCostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTerminadaCostoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTerminadaCostoActionPerformed
 
     private void txtTasaUEPInicialCMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTasaUEPInicialCMActionPerformed
         // TODO add your handling code here:
@@ -476,10 +443,6 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTasaUEPFinalCCActionPerformed
 
-    private void txtUEPInicialCostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUEPInicialCostoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUEPInicialCostoActionPerformed
-
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         if(cbMetodoSolucion.getSelectedIndex()==0)
         {
@@ -487,20 +450,25 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
             lbCostosEUMaterial.setText(departamento.costoE_porUnidadMaterial(true)+"");
             lbCostosEUCC.setText(departamento.costoE_porUnidadCC(true)+"");
             
+            lbCostContabCC.setText(costoFinal.costoConversion+"");
+            lbCostContabM.setText(costoFinal.costoMaterial+"");
+            
         } else {
             
-            lbCostosEUMaterial.setText(departamento.costoE_porUnidadMaterial(false)+"");
             departamento.procesandoInformacion(false);
+            lbCostosEUMaterial.setText(departamento.costoE_porUnidadMaterial(false)+"");
             lbCostosEUCC.setText(departamento.costoE_porUnidadCC(false)+"");
+            
+            lbCostContabM.setText(departamento.costosContabilizarMateriales()+"");
+            lbCostContabCC.setText(departamento.costosContabilizarCC()+"");
         }
         
         
             lbTotalCosteado.setText(departamento.totalCosteado+"");
             lbTotalUComenzadas.setText(departamento.unidades_comenzadas()+"");
             lbCostosConversion.setText(departamento.ueCConversion+"");
-            lbCostContabM.setText(departamento.costosContabilizarMateriales()+"");
-            lbCostContabCC.setText(departamento.costosContabilizarCC()+"");
-            lbCostosEUCC.setText(departamento.costoContabilizado+"");
+
+            
             
             
             lbCostoContabilizar.setText(departamento.costoContabilizar+"");
@@ -588,11 +556,8 @@ public class CosteoPorProcesoFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtTasaUEPFinalCM;
     private javax.swing.JTextField txtTasaUEPInicialCC;
     private javax.swing.JTextField txtTasaUEPInicialCM;
-    private javax.swing.JTextField txtTerminadaCosto;
     private javax.swing.JTextField txtTerminadasTasaCC;
     private javax.swing.JTextField txtTerminadasTasaCM;
-    private javax.swing.JTextField txtUEPFinalCosto;
-    private javax.swing.JTextField txtUEPInicialCosto;
     private javax.swing.JTextField txtUepFinal;
     private javax.swing.JTextField txtUepInicial;
     private javax.swing.JTextField txtUnidadesTerminadas;
