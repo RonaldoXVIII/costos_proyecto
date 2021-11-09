@@ -95,12 +95,8 @@ public class FrmPrincipal extends javax.swing.JFrame
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Datos Generales"));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnCrearEmpresa.setText("Crear Empresa");
         btnCrearEmpresa.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +104,6 @@ public class FrmPrincipal extends javax.swing.JFrame
                 btnCrearEmpresaActionPerformed(evt);
             }
         });
-        jPanel3.add(btnCrearEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 190, 52));
 
         btnCrearEmpleado2.setText("Crear Empresa");
         btnCrearEmpleado2.addActionListener(new java.awt.event.ActionListener() {
@@ -116,20 +111,45 @@ public class FrmPrincipal extends javax.swing.JFrame
                 btnCrearEmpleado2ActionPerformed(evt);
             }
         });
-        jPanel3.add(btnCrearEmpleado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 190, 52));
 
         txtNombreEmpresa.setBorder(javax.swing.BorderFactory.createTitledBorder("Nombre"));
-        jPanel3.add(txtNombreEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 140, 57));
 
         cboTipoCifa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-----No Seleccionado-----", "Predeterminado", "Departamental" }));
         cboTipoCifa.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Tipo Cifa"));
-        jPanel3.add(cboTipoCifa, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 40, 185, 60));
 
         cboModalidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-----No Seleccionado-----", "Real", "Presupuestado", "Real y Presupuestado" }));
         cboModalidad.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Modalidad"));
-        jPanel3.add(cboModalidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 185, 60));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 670, 200));
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(txtNombreEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(cboModalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55)
+                .addComponent(cboTipoCifa, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(234, 234, 234)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCrearEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCrearEmpleado2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtNombreEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cboModalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cboTipoCifa, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCrearEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCrearEmpleado2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         pnlBaseParaEmpresa.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Bases para la Empresa"));
 
@@ -164,8 +184,6 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(49, Short.MAX_VALUE))
         );
 
-        jPanel1.add(pnlBaseParaEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 670, -1));
-
         pnlBaseAsignacionCostos.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Base de Asignación de Costos"));
 
         cboBaseAsignacionCosto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Base"));
@@ -198,25 +216,59 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel1.add(pnlBaseAsignacionCostos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 670, -1));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlBaseParaEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlBaseAsignacionCostos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(pnlBaseParaEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(pnlBaseAsignacionCostos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         jtppGeneralidadDepartamento.addTab("Empresa", jPanel1);
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Datos Generales Departamento"));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtCIReales.setBorder(javax.swing.BorderFactory.createTitledBorder("Costos Indirectos Reales"));
-        jPanel5.add(txtCIReales, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 210, 57));
 
         txtCIPresupuestado.setBorder(javax.swing.BorderFactory.createTitledBorder("Costos Indirectos Presupuestados"));
-        jPanel5.add(txtCIPresupuestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 240, 57));
 
         txtNombreDepartamento.setBorder(javax.swing.BorderFactory.createTitledBorder("Nombre"));
-        jPanel5.add(txtNombreDepartamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 120, 57));
 
-        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 670, 120));
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(txtNombreDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(txtCIPresupuestado, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(txtCIReales, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtNombreDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCIPresupuestado, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCIReales, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         pnlHorasMO.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Mano de Obra"));
 
@@ -245,15 +297,12 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        jPanel2.add(pnlHorasMO, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 670, 110));
-
         btnAgregarDepartamento.setText("Agregar Departamento");
         btnAgregarDepartamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarDepartamentoActionPerformed(evt);
             }
         });
-        jPanel2.add(btnAgregarDepartamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, 190, 52));
 
         pnlHorasMA.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Maquinaria"));
 
@@ -282,15 +331,12 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        jPanel2.add(pnlHorasMA, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 670, 110));
-
         btnEstablecerDepartamentos.setText("Establecer Departamentos a la empresa");
         btnEstablecerDepartamentos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEstablecerDepartamentosActionPerformed(evt);
             }
         });
-        jPanel2.add(btnEstablecerDepartamentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, 270, 52));
 
         pnlBaseParaTasaDepartamental.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Base para Tasa Departamental"));
 
@@ -312,23 +358,55 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap())
         );
 
-        jPanel2.add(pnlBaseParaTasaDepartamental, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 670, 90));
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(pnlHorasMO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(pnlHorasMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(pnlBaseParaTasaDepartamental, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(260, 260, 260)
+                .addComponent(btnAgregarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(410, 410, 410)
+                .addComponent(btnEstablecerDepartamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(pnlHorasMO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(pnlHorasMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(pnlBaseParaTasaDepartamental, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(btnAgregarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(btnEstablecerDepartamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         jtppGeneralidadDepartamento.addTab("Generalidad Departamento", jPanel2);
 
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Datos Generales de la Orden"));
-        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtUnidades.setBorder(javax.swing.BorderFactory.createTitledBorder("Unidades"));
-        jPanel9.add(txtUnidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 40, 190, 57));
 
         txtImporteMaterialDirecto.setBorder(javax.swing.BorderFactory.createTitledBorder("Material Directo"));
-        jPanel9.add(txtImporteMaterialDirecto, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 200, 57));
 
         txtNumeroOrden.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Nro"));
-        jPanel9.add(txtNumeroOrden, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 150, 57));
 
         btnCrearOrden.setText("Crear Orden");
         btnCrearOrden.addActionListener(new java.awt.event.ActionListener() {
@@ -336,9 +414,33 @@ public class FrmPrincipal extends javax.swing.JFrame
                 btnCrearOrdenActionPerformed(evt);
             }
         });
-        jPanel9.add(btnCrearOrden, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 190, 52));
 
-        jPanel7.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 670, 190));
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(txtNumeroOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(txtImporteMaterialDirecto, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(txtUnidades, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(224, 224, 224)
+                .addComponent(btnCrearOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtNumeroOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtImporteMaterialDirecto, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUnidades, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addComponent(btnCrearOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pnlOrdenMO.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Mano de Obra"));
 
@@ -367,8 +469,6 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        jPanel7.add(pnlOrdenMO, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 670, 110));
-
         pnlOrdenMA.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Maquinaria"));
 
         txtHMaquina.setBorder(javax.swing.BorderFactory.createTitledBorder("Horas Máquina"));
@@ -396,15 +496,12 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        jPanel7.add(pnlOrdenMA, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 670, 110));
-
         btnLlenarBasesDepartamentos.setText("Llenar Bases del Departamento ");
         btnLlenarBasesDepartamentos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLlenarBasesDepartamentosActionPerformed(evt);
             }
         });
-        jPanel7.add(btnLlenarBasesDepartamentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 480, 220, 52));
 
         btnGenerarOrden.setText("Generar Orden");
         btnGenerarOrden.addActionListener(new java.awt.event.ActionListener() {
@@ -412,11 +509,44 @@ public class FrmPrincipal extends javax.swing.JFrame
                 btnGenerarOrdenActionPerformed(evt);
             }
         });
-        jPanel7.add(btnGenerarOrden, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 530, 190, 52));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(pnlOrdenMO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(pnlOrdenMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(230, 230, 230)
+                .addComponent(btnLlenarBasesDepartamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(btnGenerarOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(pnlOrdenMO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(pnlOrdenMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnLlenarBasesDepartamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(btnGenerarOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
 
         jtppGeneralidadDepartamento.addTab("Orden", jPanel7);
-
-        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlHojaCostos.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "HOJA DE COSTOS POR ORDEN"));
 
@@ -441,11 +571,33 @@ public class FrmPrincipal extends javax.swing.JFrame
                 .addContainerGap(266, Short.MAX_VALUE))
         );
 
-        jPanel12.add(pnlHojaCostos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 670, 550));
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(pnlHojaCostos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(pnlHojaCostos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         jtppGeneralidadDepartamento.addTab("Hoja de Costos", jPanel12);
 
-        getContentPane().add(jtppGeneralidadDepartamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 640));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jtppGeneralidadDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jtppGeneralidadDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
