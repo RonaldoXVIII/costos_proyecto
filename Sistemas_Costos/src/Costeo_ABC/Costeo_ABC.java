@@ -1,4 +1,4 @@
-package Sistema_Costo;
+package Costeo_ABC;
 
 import Costeo_ABC.Actividad;
 import Costeo_ABC.Impulsador;
@@ -102,31 +102,31 @@ public class Costeo_ABC extends javax.swing.JFrame {
 
         jLabel1.setText("Actividades");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(330, 10, 80, 14);
+        jLabel1.setBounds(330, 10, 80, 16);
         jPanel1.add(jSeparator1);
         jSeparator1.setBounds(10, 170, 810, 10);
 
         jLabel2.setText("Nombre Actividad");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(10, 50, 120, 14);
+        jLabel2.setBounds(10, 50, 120, 16);
         jPanel1.add(txt_actividadNom);
         txt_actividadNom.setBounds(140, 40, 240, 30);
 
         jLabel3.setText("Cif Actividad");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(400, 50, 90, 14);
+        jLabel3.setBounds(400, 50, 90, 16);
         jPanel1.add(txt_actividadCif);
         txt_actividadCif.setBounds(500, 40, 140, 30);
 
         jLabel4.setText("Impulsador nombre");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 100, 130, 14);
+        jLabel4.setBounds(10, 100, 130, 16);
         jPanel1.add(txt_impulsadorActividad);
         txt_impulsadorActividad.setBounds(140, 90, 240, 30);
 
         jLabel5.setText("Numero total");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(400, 100, 100, 14);
+        jLabel5.setBounds(400, 100, 100, 16);
         jPanel1.add(txt_impulsadorActividadCant);
         txt_impulsadorActividadCant.setBounds(500, 90, 140, 30);
 
@@ -166,13 +166,13 @@ public class Costeo_ABC extends javax.swing.JFrame {
             }
         });
         jPanel1.add(bt_activarProducto);
-        bt_activarProducto.setBounds(30, 180, 150, 23);
+        bt_activarProducto.setBounds(30, 180, 150, 32);
 
         jp_panelProducto.setLayout(null);
 
         jLabel10.setText("Actividad Usada");
         jp_panelProducto.add(jLabel10);
-        jLabel10.setBounds(20, 20, 100, 14);
+        jLabel10.setBounds(20, 20, 100, 16);
 
         cb_actividadUsada.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         cb_actividadUsada.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +194,7 @@ public class Costeo_ABC extends javax.swing.JFrame {
 
         jLabel11.setText("Impulsador Usado");
         jp_panelProducto.add(jLabel11);
-        jLabel11.setBounds(420, 20, 110, 14);
+        jLabel11.setBounds(420, 20, 110, 16);
 
         cb_impulsadorUsado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "------------" }));
         jp_panelProducto.add(cb_impulsadorUsado);
@@ -202,7 +202,7 @@ public class Costeo_ABC extends javax.swing.JFrame {
 
         jLabel12.setText("Cantidad Impulsador");
         jp_panelProducto.add(jLabel12);
-        jLabel12.setBounds(20, 70, 120, 14);
+        jLabel12.setBounds(20, 70, 120, 16);
         jp_panelProducto.add(txt_cantidadImpulsadorProducto);
         txt_cantidadImpulsadorProducto.setBounds(160, 60, 90, 30);
 
@@ -213,15 +213,15 @@ public class Costeo_ABC extends javax.swing.JFrame {
             }
         });
         jp_panelProducto.add(bt_añadirProducto);
-        bt_añadirProducto.setBounds(20, 210, 180, 23);
+        bt_añadirProducto.setBounds(20, 210, 180, 32);
 
         jLabel6.setText("Nombre Producto");
         jp_panelProducto.add(jLabel6);
-        jLabel6.setBounds(20, 120, 110, 14);
+        jLabel6.setBounds(20, 120, 110, 16);
 
         jLabel8.setText("Costo Material");
         jp_panelProducto.add(jLabel8);
-        jLabel8.setBounds(20, 170, 90, 14);
+        jLabel8.setBounds(20, 170, 90, 16);
         jp_panelProducto.add(txt_productoCosMaterial);
         txt_productoCosMaterial.setBounds(160, 160, 150, 30);
         jp_panelProducto.add(txt_productoNom);
@@ -229,11 +229,11 @@ public class Costeo_ABC extends javax.swing.JFrame {
 
         jLabel9.setText("Costo Mano de Obra");
         jp_panelProducto.add(jLabel9);
-        jLabel9.setBounds(350, 170, 120, 14);
+        jLabel9.setBounds(350, 170, 120, 16);
 
         jLabel7.setText("Unidades Producto");
         jp_panelProducto.add(jLabel7);
-        jLabel7.setBounds(440, 120, 120, 14);
+        jLabel7.setBounds(440, 120, 120, 16);
         jp_panelProducto.add(txt_productoUnidades);
         txt_productoUnidades.setBounds(560, 110, 140, 30);
         jp_panelProducto.add(txt_productoCosManoObra);
@@ -269,7 +269,7 @@ public class Costeo_ABC extends javax.swing.JFrame {
             }
         });
         jPanel1.add(bt_activarCalcular);
-        bt_activarCalcular.setBounds(210, 180, 160, 23);
+        bt_activarCalcular.setBounds(210, 180, 160, 32);
 
         bt_calcular.setText("Calcular");
         bt_calcular.addActionListener(new java.awt.event.ActionListener() {
@@ -278,7 +278,7 @@ public class Costeo_ABC extends javax.swing.JFrame {
             }
         });
         jPanel1.add(bt_calcular);
-        bt_calcular.setBounds(460, 470, 180, 23);
+        bt_calcular.setBounds(460, 470, 180, 32);
 
         bt_reporte.setText("Reporte");
         bt_reporte.addActionListener(new java.awt.event.ActionListener() {
@@ -287,7 +287,7 @@ public class Costeo_ABC extends javax.swing.JFrame {
             }
         });
         jPanel1.add(bt_reporte);
-        bt_reporte.setBounds(660, 470, 160, 23);
+        bt_reporte.setBounds(660, 470, 160, 32);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -314,7 +314,7 @@ public class Costeo_ABC extends javax.swing.JFrame {
             }
         });
         jPanel2.add(bt_atras);
-        bt_atras.setBounds(710, 440, 110, 23);
+        bt_atras.setBounds(710, 440, 110, 32);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
