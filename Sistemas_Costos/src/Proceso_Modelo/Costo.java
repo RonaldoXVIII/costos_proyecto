@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package costo_por_proceso;
+package Proceso_Modelo;
+
+import costo_por_proceso.*;
 
 /**
  *
  * @author ASUS
  */
 public class Costo {
-    double costoMaterial,costoConversion;
+    private double costoMaterial,costoConversion;
 
     public Costo(double costoMaterial, double costoConversion) {
         this.costoMaterial = costoMaterial;
@@ -21,5 +23,22 @@ public class Costo {
     {
         return costoMaterial+costoConversion;
     }
+
+    public double getCostoMaterial() {
+        return costoMaterial;
+    }
+
+    public void setCostoMaterial(double costoMaterial) {
+        this.costoMaterial = costoMaterial;
+    }
+
+    public double getCostoConversion() {
+        return costoConversion;
+    }
+
+    public void setCostoConversion(double costoConversion) {
+        this.costoConversion = costoConversion;
+    }
+    
     
 }

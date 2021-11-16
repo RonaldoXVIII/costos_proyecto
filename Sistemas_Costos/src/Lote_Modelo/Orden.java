@@ -1,5 +1,5 @@
 
-package Modelo_lote;
+package Lote_Modelo;
 
 public class Orden
 {

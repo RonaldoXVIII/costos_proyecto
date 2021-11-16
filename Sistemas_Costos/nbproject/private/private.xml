@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/PROYECTOS/costos_descarga/Sistemas_Costos/src/Costeo_ABC/Impulsador.java</file>
-            <file>file:/G:/PROYECTOS/costos_descarga/Sistemas_Costos/src/Vista_Lote/FrmPrincipal.java</file>
-            <file>file:/G:/PROYECTOS/costos_descarga/Sistemas_Costos/src/Costeo_ABC/Costeo_ABC.java</file>
-            <file>file:/G:/PROYECTOS/costos_descarga/Sistemas_Costos/src/costo_por_proceso/CosteoPorProcesoFrame.java</file>
-            <file>file:/G:/PROYECTOS/costos_descarga/Sistemas_Costos/src/Costeo_ABC/Actividad.java</file>
+            <file>file:/G:/PROYECTOS/Costo_Proyecto/Sistemas_Costos/src/Proceso_Modelo/Departamento.java</file>
+            <file>file:/G:/PROYECTOS/Costo_Proyecto/Sistemas_Costos/src/Proceso_Controlador/ControladorDepartamento.java</file>
         </group>
     </open-files>
 </project-private>

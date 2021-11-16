@@ -1,19 +1,19 @@
 
-package Vista_Lote;
+package Lote_Vista;
 
-import Controlador_lote.DepartamentoController;
-import Controlador_lote.EmpresaController;
-import Controlador_lote.OrdenController;
+import Lote_Controlador.DepartamentoController;
+import Lote_Controlador.EmpresaController;
+import Lote_Controlador.OrdenController;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class FrmPrincipal extends javax.swing.JFrame
+public class LoteForm extends javax.swing.JFrame
 {
     public EmpresaController objEmpresaController;
     public DepartamentoController objDepartamentoController;
     public OrdenController objOrdenController;
     
-    public FrmPrincipal() 
+    public LoteForm() 
     {
         initComponents();
         inicializarOtrosComponentes();
@@ -608,7 +608,7 @@ public class FrmPrincipal extends javax.swing.JFrame
             objOrdenController.LlenarBaseDepartamentoController();
         } catch (CloneNotSupportedException ex) 
         {
-            Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoteForm.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnLlenarBasesDepartamentosActionPerformed
 
@@ -618,7 +618,7 @@ public class FrmPrincipal extends javax.swing.JFrame
             objOrdenController.GenerarOrdenController();
         } catch (CloneNotSupportedException ex)
         {
-            Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoteForm.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnGenerarOrdenActionPerformed
 
@@ -632,7 +632,7 @@ public class FrmPrincipal extends javax.swing.JFrame
             objDepartamentoController.agregarController();
         } catch (CloneNotSupportedException ex)
         {
-            Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoteForm.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnAgregarDepartamentoActionPerformed
 
@@ -658,7 +658,7 @@ public class FrmPrincipal extends javax.swing.JFrame
             objOrdenController.CrearController();
         } catch (CloneNotSupportedException ex)
         {
-            Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoteForm.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnCrearOrdenActionPerformed
 
@@ -676,20 +676,21 @@ public class FrmPrincipal extends javax.swing.JFrame
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmPrincipal().setVisible(true);
+                new LoteForm().setVisible(true);
             }
         });
     }

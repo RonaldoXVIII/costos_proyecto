@@ -1,11 +1,11 @@
 
-package Modelo_lote;
+package Lote_Modelo;
 
-import Vista_Lote.FrmPrincipal;
-import Modelo_lote.Base;
-import Modelo_lote.Departamento;
-import Modelo_lote.Empresa;
-import Modelo_lote.Orden;
+import Lote_Vista.LoteForm;
+import Lote_Modelo.Base;
+import Lote_Modelo.Departamento;
+import Lote_Modelo.Empresa;
+import Lote_Modelo.Orden;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -15,9 +15,9 @@ public class OrdenModel
     private Empresa objEmpresa;
     int cantidadDep, DepsBasesLlenadas = 0;
     
-    FrmPrincipal objFrmPrincipal;
+    LoteForm objFrmPrincipal;
 
-    public OrdenModel(FrmPrincipal objFrmPrincipal) 
+    public OrdenModel(LoteForm objFrmPrincipal) 
     {
         this.objFrmPrincipal = objFrmPrincipal;    
     }

@@ -1,9 +1,9 @@
 
-package Controlador_lote;
+package Lote_Controlador;
 
-import Modelo_lote.Departamento;
-import Modelo_lote.DepartamentoModel;
-import Vista_Lote.FrmPrincipal;
+import Lote_Modelo.Departamento;
+import Lote_Modelo.DepartamentoModel;
+import Lote_Vista.LoteForm;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class DepartamentoController
 {
     DepartamentoModel objDepartamentoModel;
 
-    public DepartamentoController(FrmPrincipal objFrmPrincipal) 
+    public DepartamentoController(LoteForm objFrmPrincipal) 
     {
         objDepartamentoModel= new DepartamentoModel(objFrmPrincipal);
     }

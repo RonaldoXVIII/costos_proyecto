@@ -1,14 +1,14 @@
 
-package Controlador_lote;
+package Lote_Controlador;
 
-import Modelo_lote.OrdenModel;
-import Vista_Lote.FrmPrincipal;
+import Lote_Modelo.OrdenModel;
+import Lote_Vista.LoteForm;
 
 public class OrdenController
 {
     OrdenModel objOrdenModel;
 
-    public OrdenController(FrmPrincipal objFrmPrincipal) 
+    public OrdenController(LoteForm objFrmPrincipal) 
     {
         objOrdenModel = new OrdenModel(objFrmPrincipal);
     }

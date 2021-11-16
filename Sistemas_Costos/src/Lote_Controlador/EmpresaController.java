@@ -1,15 +1,15 @@
 
-package Controlador_lote;
+package Lote_Controlador;
 
-import Modelo_lote.Empresa;
-import Modelo_lote.EmpresaModel;
-import Vista_Lote.FrmPrincipal;
+import Lote_Modelo.Empresa;
+import Lote_Modelo.EmpresaModel;
+import Lote_Vista.LoteForm;
 
 public class EmpresaController 
 {
     EmpresaModel objEmpresaModel;
 
-    public EmpresaController(FrmPrincipal objFrmPrincipal) 
+    public EmpresaController(LoteForm objFrmPrincipal) 
     {
         objEmpresaModel = new EmpresaModel(objFrmPrincipal);
     }

@@ -1,17 +1,17 @@
 
-package Modelo_lote;
+package Lote_Modelo;
 
-import Vista_Lote.FrmPrincipal;
-import Modelo_lote.Base;
-import Modelo_lote.Empresa;
+import Lote_Vista.LoteForm;
+import Lote_Modelo.Base;
+import Lote_Modelo.Empresa;
 import javax.swing.JOptionPane;
 
 public class EmpresaModel
 {
     private Empresa empresa;
-    FrmPrincipal objFrmPrincipal;
+    LoteForm objFrmPrincipal;
 
-    public EmpresaModel(FrmPrincipal objFrmPrincipal) 
+    public EmpresaModel(LoteForm objFrmPrincipal) 
     {
         this.objFrmPrincipal = objFrmPrincipal;
     }

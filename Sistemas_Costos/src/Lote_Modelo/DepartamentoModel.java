@@ -1,10 +1,10 @@
 
-package Modelo_lote;
+package Lote_Modelo;
 
-import Vista_Lote.FrmPrincipal;
-import Modelo_lote.Base;
-import Modelo_lote.Departamento;
-import Modelo_lote.Empresa;
+import Lote_Vista.LoteForm;
+import Lote_Modelo.Base;
+import Lote_Modelo.Departamento;
+import Lote_Modelo.Empresa;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -14,9 +14,9 @@ public class DepartamentoModel
 {   
     private Departamento departamento;
     private ArrayList<Departamento> listaDepartamentos;
-    FrmPrincipal objFrmPrincipal;
+    LoteForm objFrmPrincipal;
 
-    public DepartamentoModel (FrmPrincipal objFrmPrincipal) 
+    public DepartamentoModel (LoteForm objFrmPrincipal) 
     {
         this.objFrmPrincipal = objFrmPrincipal;
         listaDepartamentos = new ArrayList<Departamento>();
